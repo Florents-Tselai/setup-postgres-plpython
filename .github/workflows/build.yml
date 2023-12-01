@@ -39,3 +39,4 @@ jobs:
       # Homebrew has invalid path for Postgres 12 and 13
       - if: ${{ matrix.postgres-version == 11 }}
         run: test -f $(pg_config --includedir-server)/postgres.h
+
